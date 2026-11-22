@@ -31,7 +31,7 @@ npm-debug.log*
 
 # AI model cache (hundreds of MB)
 backend/.cache/
-models/
+/backend/models/
 
 # Editors / OS
 .vscode/
