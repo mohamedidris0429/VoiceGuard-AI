@@ -1,0 +1,54 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+
+# Uploaded audio + generated reports (never commit user recordings)
+storage/audio/
+storage/reports/
+storage/tmp/
+storage/samples/
+storage/.pgdata/
+storage/*.log
+
+# Local PostgreSQL cluster (created by scripts/setup_db.ps1)
+.pgdata/
+pg.log
+
+# Python
+backend/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+
+# AI model cache (hundreds of MB)
+backend/.cache/
+models/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Root-level local files
+/.cache/
+/.freebuff/
+/node_modules/
+*.zip
+
+# Runtime storage, secrets, backups and generated test files
+/storage/
+
+# Editor backup files
+*.bak
+*.bak2
+*.bak3
